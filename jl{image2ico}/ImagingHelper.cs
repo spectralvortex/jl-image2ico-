@@ -5,7 +5,7 @@ using System.Drawing.Imaging;
 using System.IO;
 
 
-namespace jl_image2ico_
+namespace jl_image2ico
 {
 
     /// <summary>

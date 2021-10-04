@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jl{image2ico}", "jl{image2ico}\jl{image2ico}.csproj", "{04817C97-A9B6-4549-BDFF-51AFB613418E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jl_image2ico", "jl{image2ico}\jl_image2ico.csproj", "{04817C97-A9B6-4549-BDFF-51AFB613418E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

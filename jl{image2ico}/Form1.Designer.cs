@@ -1,4 +1,4 @@
-﻿namespace jl_image2ico_
+﻿namespace jl_image2ico
 {
     partial class Form1
     {

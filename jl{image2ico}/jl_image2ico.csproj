@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{04817C97-A9B6-4549-BDFF-51AFB613418E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>jl_image2ico_</RootNamespace>
-    <AssemblyName>jl{image2ico}</AssemblyName>
+    <RootNamespace>jl_image2ico</RootNamespace>
+    <AssemblyName>jl_image2ico</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

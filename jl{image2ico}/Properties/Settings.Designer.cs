@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace jl_image2ico_.Properties {
+namespace jl_image2ico.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

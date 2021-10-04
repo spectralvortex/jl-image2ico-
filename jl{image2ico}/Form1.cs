@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows.Forms;
 
 
-namespace jl_image2ico_
+namespace jl_image2ico
 {
     public partial class Form1 : Form
     {
