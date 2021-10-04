@@ -12,7 +12,7 @@ namespace jl_image2ico
     public partial class Form1 : Form
     {
 
-        string imageFileName = String.Empty;
+        string _imageFileName = String.Empty;
         
 
         public Form1()
@@ -21,9 +21,8 @@ namespace jl_image2ico
         }
 
 
-        private void btnPNG_inFile_Click(object sender, EventArgs e)
+        private void btnImage_inFile_Click(object sender, EventArgs e)
         {
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 // Loads the last visided and saved folder path if any, from the apps settings.
@@ -46,18 +45,18 @@ namespace jl_image2ico
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     // Store the filename (full path) to class parameter so that it can be used for the save icon method.
-                    imageFileName = openFileDialog.FileName;
+                    _imageFileName = openFileDialog.FileName;
 
                     // Store the filePath (without the file name) into Property.settings so that
                     // the last opened folder is remembered.
-                    Properties.Settings.Default.filePath = Path.GetDirectoryName(imageFileName);
+                    Properties.Settings.Default.filePath = Path.GetDirectoryName(_imageFileName);
                     Properties.Settings.Default.Save();
 
                     // Set the background color of the pictureboxes equal to the form's bacground color.
                     pb256.BackColor = pb48.BackColor = pb32.BackColor = pb16.BackColor = Color.FromKnownColor(KnownColor.Control);
 
                     // Get the image as read only so that the file will not be blocked.
-                    Bitmap thePicture = ImagingHelper.GetBitmapFromFileReadOnly(imageFileName);
+                    Bitmap thePicture = ImagingHelper.GetBitmapFromFileReadOnly(_imageFileName);
 
                     // Display the image in picture boxes for the different sizes.
                     pb256.Image = ImagingHelper.ResizeImage(thePicture, 256, 256);
@@ -90,7 +89,7 @@ namespace jl_image2ico
                     if (saveFileDialog.FileName != "")
                     {                                    
                         // Create and save the icon.
-                        ImagingHelper.ConvertToIcon(imageFileName, saveFileDialog.FileName);
+                        ImagingHelper.ConvertToIcon(_imageFileName, saveFileDialog.FileName);
                     }
                 }
             }

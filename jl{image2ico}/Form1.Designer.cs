@@ -55,7 +55,7 @@
             this.btnPNG_inFile.TabIndex = 0;
             this.btnPNG_inFile.Text = "Select image file ...";
             this.btnPNG_inFile.UseVisualStyleBackColor = true;
-            this.btnPNG_inFile.Click += new System.EventHandler(this.btnPNG_inFile_Click);
+            this.btnPNG_inFile.Click += new System.EventHandler(this.btnImage_inFile_Click);
             // 
             // pb256
             // 
