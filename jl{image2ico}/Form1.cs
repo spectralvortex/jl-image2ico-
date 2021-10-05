@@ -94,10 +94,5 @@ namespace jl_image2ico
                 }
             }
         }
-
-
-       
-
-
     }
 }

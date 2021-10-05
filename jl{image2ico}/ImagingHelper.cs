@@ -226,10 +226,5 @@ namespace jl_image2ico
                     return codec;
             return null;
         }
-
-
-
     }
-
-
 }

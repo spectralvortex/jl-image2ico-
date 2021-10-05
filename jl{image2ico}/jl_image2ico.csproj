@@ -10,7 +10,9 @@
     <ApplicationIcon>squares.ico</ApplicationIcon>
     <StartupObject></StartupObject>
     <AutoGenerateBindingRedirects></AutoGenerateBindingRedirects>
-    <PackageIcon>squares.png</PackageIcon>  
+    <PackageIcon>squares.png</PackageIcon>
+    <IncludeAllContentForSelfExtract>True</IncludeAllContentForSelfExtract>
+    <IncludeNativeLibrariesForSelfExtract>True</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
   <ItemGroup>
     <None Update="Properties\Settings.settings">
